@@ -1,0 +1,117 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+a{
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.3rem;
+}  
+  .signup{
+    padding: 8px 14px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    background-color: blueviolet;
+    color: whitesmoke;
+    font-size: 17px;
+    cursor: pointer;
+    &:hover{
+      background-color: rgba(91, 15, 162, 0.915);
+    }
+  }
+}
+
+
+/* Styles for mobile menu */
+.mobile-menu-button {
+  background: none;
+  border: none;
+  // color: #ff;
+  font-size: 1.9rem;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 20px; /* Add margin to separate from the logo */
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Media queries for tablet */
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-left: 0;
+  }
+}
+
+/* Media queries for tablet and mobile */
+@media only screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .mobile-menu-button {
+    margin-right: 0;
+    margin-left: -7px;
+  }
+
+  nav a {
+    margin: 5px 0;
+    padding: 10px;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+/* Media queries for mobile */
+@media only screen and (max-width: 480px) {
+  .mobile-menu-button {
+    margin-right: 0; 
+    margin-left: -7px;
+
+  }
+
+  nav a {
+    margin: 5px 0;
+    padding: 10px;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
